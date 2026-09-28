@@ -3,6 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="description" content="Sumit Shah is a Full-Stack Developer specializing in building high-quality web applications and digital solutions. Explore his portfolio, skills, and services.">
+  <meta property="og:title" content="About Sumit Shah | Full-Stack Developer">
+<meta property="og:description" content="Learn more about Sumit Shah, a Full-Stack Developer from Nepal building modern websites, web applications, and digital solutions.">
+<meta property="og:url" content="https://sumithub.com/about">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="SumitHub">
+<meta property="og:image" content="https://sumithub.com/images/favicon.ico">
+
+<meta name="keywords" content="sumithub">
+<meta name="keywords" content="sumithub.com">
+<meta name="keywords" content="nepal web developer">
+<meta name="keywords" content="sumit shah">
+<meta name="keywords" content="Full-Stack Developer, Web Development, Portfolio, Services, Skills, Projects, Nepal, Sumit Shah, Software Development, Digital Solutions, Web Applications, Frontend Development, Backend Development, JavaScript, React, Node.js, Tailwind CSS, Three.js, EmailJS, Lucide Icons">
+<meta name="keywords" content="sumit hub">
+<meta name="keywords" content="sumithub, nepal devloper, sumit shah, full-stack developer, web development, portfolio, services, skills, projects, nepal, software development, digital solutions, web applications, frontend development, backend development, javascript, react, node.js, tailwind css, three.js, emailjs, lucide icons">
+
+
+
+
+
+
+
+
   <title>SumitHub · Sumit Shah — Full-Stack Developer</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.js"></script>
@@ -790,7 +814,7 @@
   </div>
 </footer>
 
-<!-- ========== AI WIDGET COMPONENT ========== -->
+
 <div id="ai-widget-container">
   <button id="aiToggleBtn" class="flex items-center gap-2 bg-[#0c0f13] border border-[var(--accent)] text-[var(--accent)] px-4 py-3 rounded-full font-bold shadow-lg hover:bg-[var(--accent)] hover:text-[#00120d] transition-all duration-300">
     <i data-lucide="bot" class="w-5 h-5"></i>
@@ -825,11 +849,8 @@
 </div>
 
 <script>
-/* ============================================================
-   ALL-IN-ONE SCRIPT
-   - Site animations & interactions
-   - AI widget (client-side only, uses OpenRouter directly)
-   ============================================================ */
+
+   
 
 lucide.createIcons();
 
@@ -1336,16 +1357,7 @@ form.addEventListener('submit', function(e){
   });
 })();
 
-/* ============================================================
-   AI WIDGET LOGIC — single file, client-side
-   
-   ⚠️ This stores your key in the frontend, so anyone can see it
-   in DevTools. For a real production site, move this to a 
-   serverless function (/api/chat) as shown in the earlier version.
 
-   The key below is obfuscated so it doesn't sit in plain text,
-   but this is NOT real security — it only prevents casual copying.
-   ============================================================ */
 
 const aiToggleBtn = document.getElementById('aiToggleBtn');
 const aiCloseBtn = document.getElementById('aiCloseBtn');
@@ -1354,11 +1366,9 @@ const aiForm = document.getElementById('aiForm');
 const aiInput = document.getElementById('aiInput');
 const aiMessages = document.getElementById('aiMessages');
 
-/* --- Key (lightly obfuscated — still visible to a determined user) --- */
-/* Replace this with a newly-generated OpenRouter key. */
+
 function _k(){
-  // Base64 of: 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
-  // Split into chunks so it's not a single searchable string.
+  
   const parts = [
   'sk-or-v1-',
   'd9634851d492159a8b60dab95066bb6e',
