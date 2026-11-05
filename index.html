@@ -1450,7 +1450,8 @@ aiForm.addEventListener('submit', async (e) => {
         "X-Title": "SumitHub Assist"
       },
       body: JSON.stringify({
-        model: "openai/gpt-3.5-turbo",
+        // CHANGED THIS LINE: Using a valid, working OpenRouter model
+        model: "openai/gpt-4o-mini", 
         messages: chatHistory
       })
     });
@@ -1463,6 +1464,7 @@ aiForm.addEventListener('submit', async (e) => {
       appendMessage('assistant', aiReply);
       chatHistory.push({ role: "assistant", content: aiReply });
     } else {
+      // This will now show you the exact error if the key is invalid
       const errMsg = data.error?.message || "AI didn't respond. Please try again.";
       appendMessage('assistant', "⚠ " + errMsg);
       console.error("OpenRouter error:", data);
